@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const SectionStyle = styled.section`
-    padding: 1rem;
+    padding: ${({ theme }) => theme.paddings.xl};
 `;
 
 const Section = ({ children }) => {
