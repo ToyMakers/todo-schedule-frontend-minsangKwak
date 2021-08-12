@@ -14,7 +14,18 @@ REACT를 활용한 TODO frontend-schdule 프로젝트입니다.
 ### 파일 디렉토리
 
 ```bash
-
+└── src
+    ├── App.jsx
+    ├── Components
+    │   ├── Layout
+    │   │   ├── Header.jsx
+    │   │   └── Section.jsx
+    │   ├── Styles
+    │   │   ├── GlobalStyle.jsx
+    │   │   └── Theme.jsx
+    │   └── Todo
+    │       └── TodoTemplate.jsx
+    └── index.jsx
 ```
 
 ### 설치 및 실행방법
