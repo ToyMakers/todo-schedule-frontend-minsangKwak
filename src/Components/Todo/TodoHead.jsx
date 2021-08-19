@@ -26,10 +26,20 @@ const TodoHeadStyle = styled.div`
 `;
 
 const TodoHead = () => {
+    // toLocaleDateString: 날짜의 날짜부분을 언어로 구분하여 표현한 문자열을 반환
+    const today = new Date();
+    const date = today.toLocaleDateString("ko-KR", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
+    const dateName = today.toLocaleDateString("ko-KR", {
+        weekday: "long",
+    });
     return (
         <TodoHeadStyle>
-            <h1 className="date">2021.00.00</h1>
-            <div className="day">0요일</div>
+            <h1 className="date">{date}</h1>
+            <div className="day">{dateName}</div>
             <div className="tasks-left">할 일 n개 남음</div>
         </TodoHeadStyle>
     );
