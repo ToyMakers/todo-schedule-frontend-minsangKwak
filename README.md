@@ -16,16 +16,29 @@ REACT를 활용한 TODO frontend-schdule 프로젝트입니다.
 ```bash
 └── src
     ├── App.jsx
-    ├── Components
-    │   ├── Layout
-    │   │   ├── Header.jsx
-    │   │   └── Section.jsx
-    │   ├── Styles
-    │   │   ├── GlobalStyle.jsx
-    │   │   └── Theme.jsx
-    │   └── Todo
-    │       └── TodoTemplate.jsx
-    └── index.jsx
+    └── Components
+        ├── Atoms
+        │   ├── ButtonCircle
+        │   ├── ButtonRemove
+        │   ├── CheckBox
+        │   ├── CurrentDate
+        │   ├── CurrentDay
+        │   ├── InsertForm
+        │   ├── TasksLeft
+        │   └── TextBox
+        ├── Molecules
+        │   ├── InsertFormPositioner
+        │   ├── TodoCreate
+        │   ├── TodoHead
+        │   ├── TodoItem
+        │   └── TodoList
+        ├── Pages
+        │   └── Todo
+        ├── Templates
+        │   └── TodoTemplates
+        └── Styles
+            ├── GlobalStyle.jsx
+            └── Theme.jsx
 ```
 
 ### 설치 및 실행방법
