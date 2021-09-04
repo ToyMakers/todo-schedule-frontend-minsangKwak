@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const TodoTemplateStyle = styled.div`
+export const TodoTemplateStyle = styled.div`
     width: 51.2rem;
     min-height: 76.8rem;
     position: relative;
@@ -17,9 +16,3 @@ const TodoTemplateStyle = styled.div`
         width: ${({ theme }) => theme.width.lg};
     }
 `;
-
-function TodoTemplate({ children }) {
-    return <TodoTemplateStyle>{children}</TodoTemplateStyle>;
-}
-
-export default TodoTemplate;
