@@ -18,7 +18,3 @@ export const CheckBoxStyle = styled.div`
             color: ${({ theme }) => theme.colors.blue};
         `}
 `;
-
-// CheckBoxStyle.defaultProps = {
-//     done: false,
-// };
