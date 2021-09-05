@@ -12,7 +12,7 @@ const TodoList = () => {
     const [inputText, setInputText] = useState("");
     const [nextId, setNextId] = useState(5);
     const namesList = names.map((name) => (
-        <TodoItem key={name.id} text={name.text} done={name.done}></TodoItem>
+        <TodoItem key={name.id} text={name.text} done={name.done} />
     ));
     return <TodoListStyle>{namesList}</TodoListStyle>;
 };
