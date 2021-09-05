@@ -5,11 +5,9 @@ import ButtonCircle from "../../Atoms/ButtonCircle/ButtonCircle";
 const TodoCreate = () => {
     const [open, setOpen] = useState(false);
     const onToggle = () => setOpen(!open);
-    console.log(open);
     return (
         <>
-            {open === true ? <InsertFormPositioner /> : <></>}
-            {/* <InsertFormPositioner /> */}
+            {open && <InsertFormPositioner />}
             <ButtonCircle onToggle={onToggle} open={open} />
         </>
     );
