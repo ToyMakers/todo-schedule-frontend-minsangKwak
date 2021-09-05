@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import ButtonRemove from "../../Atoms/ButtonRemove/ButtonRemove";
+import styled from "styled-components";
+// import ButtonRemove from "../../Atoms/ButtonRemove/ButtonRemove";
 import { ButtonRemoveStyle } from "../../Atoms/ButtonRemove/ButtonRemoveStyle";
 
 export const TodoItemStyle = styled.div`
