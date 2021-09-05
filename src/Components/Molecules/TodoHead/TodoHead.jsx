@@ -15,13 +15,11 @@ const TodoHead = () => {
         weekday: "long",
     });
     return (
-        <>
-            <TodoHeadStyle>
-                <CurrentDate date={date} />
-                <CurrentDay dateName={dateName} />
-                <TasksLeft />
-            </TodoHeadStyle>
-        </>
+        <TodoHeadStyle>
+            <CurrentDate date={date} />
+            <CurrentDay dateName={dateName} />
+            <TasksLeft />
+        </TodoHeadStyle>
     );
 };
 
