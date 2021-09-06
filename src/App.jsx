@@ -1,9 +1,18 @@
-import React from 'react';
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import theme from "./Components/Styles/Theme";
+import GlobalStyle from "./Components/Styles/GlobalStyle";
+import Todo from "./Components/Pages/Todo/Todo";
 
-function App() {
-  return (
-    <h1>hello</h1>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <ThemeProvider theme={theme}>
+                <Todo />
+                <GlobalStyle />
+            </ThemeProvider>
+        </div>
+    );
+};
 
 export default App;
